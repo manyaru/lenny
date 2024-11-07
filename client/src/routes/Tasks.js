@@ -21,7 +21,7 @@ const Tasks = () => {
     useEffect(() => {
         const getTasks = async () => {
             try {
-                const res = await axios.get('https://task-management-server-rho-ten.vercel.app/api/tasks/all', {
+                const res = await axios.get('https://lenny-xi.vercel.app/api/tasks/all', {
                     headers: {
                         Authorization: token,
                     }
@@ -45,7 +45,7 @@ const Tasks = () => {
         getTasks();
 
     }, [token, navigate]);
-    
+
     return (
         <>
             {isLoading ? (

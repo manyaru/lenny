@@ -21,7 +21,7 @@ const AddTask = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post('https://task-management-server-rho-ten.vercel.app/api/tasks/add',
+            const res = await axios.post('https://lenny-xi.vercel.app/api/tasks/add',
                 { name, description, dueDate, priorityLevel },
                 {
                     headers: {
@@ -45,8 +45,6 @@ const AddTask = () => {
             }
         }
     };
-
-
 
     return (
         <form onSubmit={handleAddTask} className='add-task'>
