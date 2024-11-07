@@ -26,7 +26,7 @@ const Login = () => {
     const handleLogin = e => {
         e.preventDefault();
 
-        axios.post('https://lenny-xi.vercel.app/api/user/login', { email, password })
+        axios.post('https://task-management-server-rho-ten.vercel.app/api/user/login', { email, password })
             .then(res => {
                 console.log(res);
                 setError('');

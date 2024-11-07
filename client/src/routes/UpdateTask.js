@@ -21,7 +21,7 @@ const UpdateTask = () => {
     const token = user.token;
 
     useEffect(() => {
-        axios.get(`https://lenny-xi.vercel.app/api/tasks/${id}`, {
+        axios.get(`https://task-management-server-rho-ten.vercel.app/api/tasks/${id}`, {
             headers: {
                 Authorization: token,
             }
@@ -57,7 +57,7 @@ const UpdateTask = () => {
     const handleUpdateTask = async (e, id) => {
         e.preventDefault();
         try {
-            const res = await axios.put(`https://lenny-xi.vercel.app/api/tasks/update/${id}`,
+            const res = await axios.put(`https://task-management-server-rho-ten.vercel.app/api/tasks/update/${id}`,
                 { name, description, dueDate, priorityLevel },
                 {
                     headers: {
